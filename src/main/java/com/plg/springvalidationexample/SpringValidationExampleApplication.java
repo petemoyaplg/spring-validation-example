@@ -15,9 +15,9 @@ public class SpringValidationExampleApplication {
 		SpringApplication.run(SpringValidationExampleApplication.class, args);
 	}
 
-	@Scheduled(fixedDelay = 2000)
+	@Scheduled(fixedDelay = 20000)
 	public void sheduledRun() {
-		System.out.println("Currentr sheduled time : " + new Date());
+		System.out.println("Current sheduled time : " + new Date());
 	}
 
 }
