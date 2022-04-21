@@ -20,12 +20,14 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class User {
   @Id
-  @Column(length = 36)
+  @Column(name = "userId", length = 36)
   private String userId;
   @Column(length = 50)
   private String name;
   @Column(length = 100)
   private String email;
+  @Column(length = 13)
+  private String mobile;
   @Column(length = 500)
   private String password;
   @Column(length = 1)

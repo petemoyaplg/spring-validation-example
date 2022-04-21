@@ -6,8 +6,9 @@ import java.util.UUID;
 
 import javax.validation.Valid;
 
+import com.plg.springvalidationexample.Exceptions.UserNotFoundException;
+import com.plg.springvalidationexample.dto.UserDto;
 import com.plg.springvalidationexample.model.User;
-import com.plg.springvalidationexample.model.dto.UserDto;
 import com.plg.springvalidationexample.service.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,7 +40,7 @@ public class UserController {
   }
 
   @GetMapping("/{id}")
-  public ResponseEntity<Optional<User>> getUser(@PathVariable UUID id) {
+  public ResponseEntity<Optional<User>> getUser(@PathVariable UUID id) throws UserNotFoundException {
     return ResponseEntity.ok(this.userService.getOneUser(id));
   }
 

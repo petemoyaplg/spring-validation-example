@@ -1,6 +1,4 @@
-package com.plg.springvalidationexample.model.dto;
-
-import java.util.UUID;
+package com.plg.springvalidationexample.dto;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Max;
@@ -22,8 +20,8 @@ public class UserDto {
   @Email(message = "Email non valide")
   private String email;
   @Pattern(regexp = "^\\d{10}$", message = "numero de telepphone invalide")
+  private String mobile;
   private String password;
-  @Max(1)
   private String gender;
   @Min(18)
   @Max(65)

@@ -3,6 +3,8 @@ package com.plg.springvalidationexample.Errors;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.plg.springvalidationexample.Exceptions.UserNotFoundException;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -21,4 +23,13 @@ public class ApplicationExceptionHandle {
     });
     return errorMap;
   }
+
+  @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+  @ExceptionHandler(UserNotFoundException.class)
+  public Map<String, String> HandleBusinessException(UserNotFoundException ex) {
+    Map<String, String> errorMap = new HashMap<>();
+    errorMap.put("errorMessage", ex.getMessage());
+    return errorMap;
+  }
+
 }
