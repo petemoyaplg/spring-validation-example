@@ -32,26 +32,30 @@ public class UserController {
 
   // private static final Logger logger =
   // Logger.getLogger(UserController.class.getName());
-  private static final Logger logger = LoggerFactory.getLogger(UserController.class.getName());
+  private static final Logger LOGGER = LoggerFactory.getLogger(UserController.class.getName());
 
   @Autowired
   private UserService userService;
 
   @PostMapping("/signup")
-  public ResponseEntity<User> saveUser(@RequestBody @Valid UserDto userDto) {
+  public ResponseEntity<User> saveUser(@RequestBody @Valid UserDto userDto, HttpServletRequest request) {
+    LOGGER.trace("Début de la méthode getAllUser");
+    LOGGER.debug("URI : " + request.getRequestURI());
     return new ResponseEntity<>(this.userService.saveUser(userDto), HttpStatus.CREATED);
   }
 
   @GetMapping("/fetchAll")
   public ResponseEntity<List<User>> getAllUser(HttpServletRequest request) {
-    logger.warn("This is warn" + request.getRequestURI());
-    logger.error("This is a problem" + request.getRequestURI());
-    // logger.trace("Fatal error");
+    LOGGER.trace("Début de la méthode getAllUser");
+    LOGGER.debug("URI : " + request.getRequestURI());
     return ResponseEntity.ok(this.userService.getAllUsers());
   }
 
   @GetMapping("/{id}")
-  public ResponseEntity<Optional<User>> getUser(@PathVariable UUID id) throws UserNotFoundException {
+  public ResponseEntity<Optional<User>> getUser(@PathVariable UUID id,
+      HttpServletRequest request) throws UserNotFoundException {
+    LOGGER.trace("Début de la méthode getAllUser");
+    LOGGER.debug("URI : " + request.getRequestURI());
     return ResponseEntity.ok(this.userService.getOneUser(id));
   }
 

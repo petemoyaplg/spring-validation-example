@@ -1,0 +1,30 @@
+2022-04-23 13:23:18 [restartedMain] [INFO] c.p.s.SpringValidationExampleApplication           : Starting SpringValidationExampleApplication using Java 16.0.2 on C0007 with PID 11260 (C:\Users\stagiaire-it\Documents\projet-test\backend\spring\spring-validation-example\target\classes started by stagiaire-it in C:\Users\stagiaire-it\Documents\projet-test\backend\spring\spring-validation-example)
+2022-04-23 13:23:18 [restartedMain] [DEBUG] c.p.s.SpringValidationExampleApplication           : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-23 13:23:18 [restartedMain] [INFO] c.p.s.SpringValidationExampleApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-04-23 13:23:18 [restartedMain] [INFO] o.s.d.r.config.RepositoryConfigurationDelegate     : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-23 13:23:18 [restartedMain] [INFO] o.s.d.r.config.RepositoryConfigurationDelegate     : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interfaces.
+2022-04-23 13:23:18 [restartedMain] [INFO] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat initialized with port(s): 3000 (http)
+2022-04-23 13:23:18 [restartedMain] [INFO] org.apache.catalina.core.AprLifecycleListener      : Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-04-23 13:23:18 [restartedMain] [INFO] org.apache.catalina.core.AprLifecycleListener      : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-04-23 13:23:18 [restartedMain] [INFO] org.apache.catalina.core.AprLifecycleListener      : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-23 13:23:18 [restartedMain] [INFO] org.apache.catalina.core.AprLifecycleListener      : OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-04-23 13:23:18 [restartedMain] [INFO] org.apache.coyote.http11.Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-3000"]
+2022-04-23 13:23:18 [restartedMain] [INFO] org.apache.catalina.core.StandardService           : Starting service [Tomcat]
+2022-04-23 13:23:18 [restartedMain] [INFO] org.apache.catalina.core.StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-23 13:23:18 [restartedMain] [INFO] o.a.c.c.ContainerBase.[Tomcat-5].[localhost].[/]   : Initializing Spring embedded WebApplicationContext
+2022-04-23 13:23:18 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext     : Root WebApplicationContext: initialization completed in 294 ms
+2022-04-23 13:23:18 [restartedMain] [INFO] org.hibernate.jpa.internal.util.LogHelper          : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-23 13:23:18 [restartedMain] [INFO] com.zaxxer.hikari.HikariDataSource                 : HikariPool-247 - Starting...
+2022-04-23 13:23:18 [restartedMain] [INFO] com.zaxxer.hikari.HikariDataSource                 : HikariPool-247 - Start completed.
+2022-04-23 13:23:18 [restartedMain] [INFO] org.hibernate.dialect.Dialect                      : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-23 13:23:19 [restartedMain] [INFO] o.h.e.t.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-23 13:23:19 [restartedMain] [INFO] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-23 13:23:19 [restartedMain] [WARN] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-23 13:23:19 [restartedMain] [INFO] o.s.b.d.autoconfigure.OptionalLiveReloadServer     : LiveReload server is running on port 35729
+2022-04-23 13:23:19 [restartedMain] [INFO] org.apache.coyote.http11.Http11NioProtocol         : Starting ProtocolHandler ["http-nio-3000"]
+2022-04-23 13:23:19 [restartedMain] [INFO] o.s.boot.web.embedded.tomcat.TomcatWebServer       : Tomcat started on port(s): 3000 (http) with context path ''
+2022-04-23 13:23:19 [restartedMain] [INFO] c.p.s.SpringValidationExampleApplication           : Started SpringValidationExampleApplication in 0.714 seconds (JVM running for 8161.623)
+2022-04-23 13:23:19 [restartedMain] [INFO] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener  : Condition evaluation unchanged
+2022-04-23 13:38:48 [SpringApplicationShutdownHook] [INFO] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-23 13:38:48 [SpringApplicationShutdownHook] [INFO] com.zaxxer.hikari.HikariDataSource                 : HikariPool-247 - Shutdown initiated...
+2022-04-23 13:38:48 [SpringApplicationShutdownHook] [INFO] com.zaxxer.hikari.HikariDataSource                 : HikariPool-247 - Shutdown completed.
